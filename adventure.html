@@ -69,17 +69,19 @@
         #helmet-btn,
         #door {
             cursor: pointer;
-            transition: transform 0.2s ease;
+            transition: filter 0.3s ease;
         }
 
         #shield-btn:hover,
         #tie-btn:hover,
         #helmet-btn:hover {
-            transform: scale(1.05);
+            filter: drop-shadow(0 0 15px rgba(255, 187, 86, 0.8))
+                    drop-shadow(0 0 25px rgba(255, 187, 86, 0.6));
         }
 
         #door:hover {
-            transform: scale(1.02);
+            filter: drop-shadow(0 0 25px rgba(255, 215, 0, 1))
+                    drop-shadow(0 0 35px rgba(255, 215, 0, 0.8));
         }
 
         /* Door glow pulse animation */
