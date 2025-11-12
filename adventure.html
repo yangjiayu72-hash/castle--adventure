@@ -108,11 +108,11 @@
 
         /* Hero movement and fade */
         #hero {
-            transition: transform 2s ease-in-out, opacity 1s ease-in-out;
+            transition: transform 2.5s ease-in-out, opacity 1.5s ease-in-out;
         }
 
         #hero.moving {
-            transform: translateX(47px) translateY(-100px);
+            transform: translateX(-5px) translateY(-138px);
         }
 
         #hero.fading {
@@ -302,7 +302,7 @@
                 // Fade out hero after reaching the door
                 setTimeout(() => {
                     hero.classList.add('fading');
-                }, 2000); // Start fading after 2 seconds (when hero reaches door)
+                }, 2500); // Start fading after 2.5 seconds (when hero reaches door)
             }, 500); // Start moving after buttons fade out
         });
     </script>
